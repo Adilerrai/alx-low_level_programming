@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _isalpha - check if a character is an alphabet character
@@ -8,6 +8,7 @@
  * Return: 0 or 1
  *
  */
+
 
 int _isalpha(int c)
 {
