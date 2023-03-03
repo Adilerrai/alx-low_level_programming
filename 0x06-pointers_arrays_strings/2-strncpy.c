@@ -1,4 +1,4 @@
-i/**
+/**
  * _strncpy - A function that copies a string.
  *
  * @dest: pointer to destination input buffer
@@ -34,4 +34,3 @@ char *_strncpy(char *dest, char *src, int n)
 
 	return (dest);
 }
-
