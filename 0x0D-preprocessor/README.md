@@ -1,13 +1,24 @@
-0x0D. C - Preprocessor
-Resource
-Understanding C program Compilation Process
-Object-like Macros
-Macro Arguments
-Pre Processor Directives in C
-The C Preprocessor
-Standard Predefined Macros
-Include Guard
-Common Predefined Macros
+0x0D. C - Preprocessor .
+
+Resource 	
+
+Understanding C program Compilation Process	
+
+Object-like Macros	
+
+Macro Arguments	 	
+
+Pre Processor Directives in C		
+
+The C Preprocessor	
+
+Standard Predefined Macros	
+
+Include Guard	
+
+
+Common Predefined Macros	
+
 Tasks
 Object-like Macro : A header file that defines a macro named SIZE as an abbreviation for the token 1024.
 Compile the code this way: gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c -o a
