@@ -10,21 +10,21 @@
 int pop_listint(listint_t **head)
 {
 	int first_node;
-	listint_t *temp, *next;
+	listint_t *temporary, *next;
 
 	/*if list is empty return 0*/
 	if (*head == NULL)
 		return (0);
 
 	/*set head addr to temp*/
-	temp = *head;
+	temporary = *head;
 	/*get addr of next node*/
-	next = temp->next;
+	next = temporary->next;
 	/*get element of first node*/
-	first_node = temp->n;
+	first_node = temporary->n;
 
 	/*free first node*/
-	free(temp);
+	free(temporary);
 
 	/*set head to second node*/
 	*head = next;
