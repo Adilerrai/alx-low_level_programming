@@ -10,7 +10,7 @@
  *
  * Return: NULL if anything fails or the address of the new node
 */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int indx, int n)
 {
 	listint_t *new_node, *current;
 	unsigned int index;
@@ -18,20 +18,20 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	current = *head; /*place first node at current*/
 
 	new_node = malloc(sizeof(listint_t));
-	if ((*head == NULL && idx != 0) || new_node == NULL)
+	if ((*head == NULL && indx != 0) || new_node == NULL)
 		return (NULL);
 
 	new_node->n = n; /* add our element to the new node*/
 
 	/*iterate list to node position idx - 2*/
-	for (index = 0; head != NULL && index < idx - 1; index++)
+	for (index = 0; head != NULL && index < indx - 1; index++)
 	{
 		current = current->next;
 		if (current == NULL)
 			return (NULL);
 	}
 
-	if (idx == 0) /*if the index for new node is 0*/
+	if (indx == 0) /*if the index for new node is 0*/
 	{
 		/*first node will be moved to second node*/
 		new_node->next = *head;
