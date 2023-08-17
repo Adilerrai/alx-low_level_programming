@@ -11,10 +11,10 @@
 
 size_t dlistint_len(const dlistint_t *h)
 {
-	int count = 1;
+	size_t count = 1;
 
 	if (h == NULL)
-		printf(" No data found in the List yet.");
+		return (0);
 	while (h->next)
 	{
 		printf("%d\n", h->n);
