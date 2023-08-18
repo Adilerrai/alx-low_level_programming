@@ -10,8 +10,8 @@ size_t dlistint_len(const dlistint_t *h)
   	
 	while (dlistint != NULL)
  	{
- 		res++;
- 		node = node->next;
+ 		count++;
+ 		dlistin_t = dlistint_t->next;
 	}
-	return (res);
+	return (count);
 }
